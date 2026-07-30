@@ -5,7 +5,7 @@
 **Name:** Aditya Mathew  
 **Branch & Year:** CSE AI Batch A First year  
 **Institution:** Amrita School of Computing, Amritapuri  
-**Preferred Languages:** Python, C++, C 
+**Preferred Languages:** Python, C++, C  
 **Hobbies:** Gaming, Photography, Reading, Movies, Badminton, Football etc  
 
 My name is Aditya Mathew, a first-year CSE AI Batch A student at Amrita Vishwa Vidyapeetham. I have a decent foundation in python and enjoy gaming and the outdoors. I am deeply committed to putting in the hard work and delivering my best on every task I take on.
