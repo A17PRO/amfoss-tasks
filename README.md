@@ -43,7 +43,7 @@ My statistics is as shown :
 | Task List | Description | Status |
 | :--- | :--- | :--- |
 | Task-00 | [Install Linux](./Task-00) | Completed |
-| Task-01 | [Type Maestro](./Task-01) | Not attempted |
+| Task-01 | [Type Maestro](./Task-01) | Completed |
 | Task-02 | [Terminal Chaos](./Task-02) | Not attempted |
 | Task-03 | [Hello, World!](./Task-03) | Not attempted |
 | Task-04 | [Gopal and his PagePal](./Task-04) | Not attempted |
