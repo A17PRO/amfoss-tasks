@@ -39,7 +39,7 @@ ONE_PIECE{GITO_GITO_NO_AWAKENING}
 
 - **Output**:
 
-'''text
+```text
 -------------------------------------------------
 SECURITY LOG ACCESS // LEVEL 3 CLEARANCE REQUIRED
 -------------------------------------------------
@@ -55,7 +55,7 @@ BAROQUE WORKS EXECUTIVE REPORT
 PONEGLYPH_FRAGMENT_I = "KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnL"
 
 -------------------------------------------------
-'''
+```
 
 ## Level 4: Water 7
 
@@ -76,7 +76,7 @@ PONEGLYPH_FRAGMENT_I = "KjY2MjF4bW0lKzYqNyBsIS0vbTAtJTcnL"
 
 - **Branching and Merging**: I saw the new repo and the clue and instantly knew that the whole point of this level was to learn how to merge two branches and the rest was kind of easy, except if the pirate kings password was supposed to be a harder thing to find cause i saw the basic text "TheGrandLineRemembers" and thought that would be the password and I got it correctly.
 
-'''text
+```text
 ==============================
  Verifying Timeline Integrity 
 ==============================
@@ -126,8 +126,7 @@ Your bounty has increased to
 The Thousand Sunny will always have a place for you.
 
 Now go write your own history.
-
-'''
+```
 
 ## Conclusion 
 
