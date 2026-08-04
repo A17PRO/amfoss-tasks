@@ -18,3 +18,5 @@ class Solution(object):
 ```
 
 - **Method of Approach**: The method we did in school always showed us a correct answer if we would add the string with itself again and then take away both the first letter and the last and then check if the original string could be found inside the new string.
+
+<img width="1920" height="1200" alt="Screenshot_20260804_232207" src="https://github.com/user-attachments/assets/aef0a28c-3b10-441f-98a4-087b42e9c7ca" />
