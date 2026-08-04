@@ -55,3 +55,5 @@ class Solution(object):
 ```
 
 - **Method of Approach**: As soon as I understood what to do I knew I could access the string of roman numerals through an easy for loop and through that i made two if statements to find out if the roman numeral before the next one was smaller and if so we subtract the current numeral and the next numeral and if the current roman numeral was greater than the next we do the normal operation and add both to get the total. The second if was for the default case where we add both to get the total.
+
+<img width="1920" height="1200" alt="Screenshot_20260804_235223" src="https://github.com/user-attachments/assets/d3ae8449-8a89-49d4-a6ba-b0db0a263bab" />
