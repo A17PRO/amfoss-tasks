@@ -12,3 +12,5 @@ class Solution(object):
 ```
 
 - **Method of Approach**: This is the fastest solution in base PYTHON to solve the locate string inside another string question, `<string u want to locate>.find(<other string>)`
+
+<img width="1920" height="1200" alt="Screenshot_20260804_232118" src="https://github.com/user-attachments/assets/1f04a504-d280-4a3d-b333-ad543dc53c30" />
