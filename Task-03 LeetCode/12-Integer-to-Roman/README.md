@@ -49,3 +49,5 @@ class Solution(object):
 ```
 
 - **Method of Approach**: Since I didn't know how to loop the code to manually find one and decipher them, I thought if everything were predefined and then we just pull and append the values based on the index, that would work. So I made them into many arrays that I used to pull the value out through the indices of the array since I could get the digits for each place.
+
+<img width="1920" height="1200" alt="Screenshot_20260805_000753" src="https://github.com/user-attachments/assets/605af9e6-097d-4904-82e9-066b1bfd95bc" />
