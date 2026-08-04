@@ -28,3 +28,5 @@ class Solution(object):
 ```
 
 - **Method of Approach**: It was quite easy to solve this question cause i just took the string a and replicated it until it was bigger than b and after that i searched for whether b was in a, cause if the repetion crosses the sum of both strings a and b then there was no chance b was in a. So after that I took the count of the times I had repeated to get length of a greater than b and that was the amount of times b was in a.
+
+<img width="1920" height="1200" alt="Screenshot_20260804_233328" src="https://github.com/user-attachments/assets/838a559b-8501-4faa-b4d1-2d613a72da30" />
