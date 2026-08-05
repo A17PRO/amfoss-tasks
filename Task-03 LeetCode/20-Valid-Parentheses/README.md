@@ -37,3 +37,6 @@ class Solution(object):
 ```
 
 - **Method of Approach**: So basically I used a dictionary to store the brackets I was using in this code and then started a loop to read 's'. After reading s I check it for a opening or closing bracket in the beginning and if there is an opening bracket the loop repeats to check if it has closed without it being closed by another type of bracket, If so the temp list I made stores a variable '@' and doesn't show empty when I try to return it.
+
+<img width="1920" height="1200" alt="Screenshot_20260806_002416" src="https://github.com/user-attachments/assets/9d7b9ae5-eb9a-41b6-a396-a98c8b00a505" />
+
