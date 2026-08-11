@@ -44,7 +44,7 @@ My statistics is as shown :
 | :--- | :--- | :--- |
 | Task-00 | [Install Linux](./Task-00) | Completed |
 | Task-01 | [Prologue – The Logbook of the Grand Line](./Task-01) | Completed |
-| Task-02 | [The Grand Line Restoration Initiative](./Task-02) | Completed |
+| Task-02 | [The Grand Line Restoration Initiative](./Task-02) | Not attempted |
 | Task-03 | [Leetcode Challenge](./Task-03) | Completed |
 | Task-04 | [The Bull & The Bear](./Task-04) | Not attempted |
 | Task-05 | [Grand Line Guardian](./Task-05) | Not attempted |
