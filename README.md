@@ -43,13 +43,13 @@ My statistics is as shown :
 | Task List | Description | Status |
 | :--- | :--- | :--- |
 | Task-00 | [Install Linux](./Task-00) | Completed |
-| Task-01 | [Terminal Voyage](./Task-01) | Completed |
-| Task-02 | [Terminal Chaos](./Task-02) | Not attempted |
-| Task-03 | [Hello, World!](./Task-03) | Not attempted |
-| Task-04 | [Gopal and his PagePal](./Task-04) | Not attempted |
-| Task-05 | [TerminalTrolly](./Task-05) | Not attempted |
-| Task-06 | [OpenDocs](./Task-06) | Not attempted |
-| Task-07 | [Pirate's Dilemma](./Task-07) | Not attempted |
-| Task-08 | [Blog Burst](./Task-08) | Not attempted |
-| Task-09 | [HERO-DEX!](./Task-09) | Not attempted |
-| Task-10 | [Operation Pixel Merge](./Task-10) | Not attempted |
+| Task-01 | [Prologue – The Logbook of the Grand Line](./Task-01) | Completed |
+| Task-02 | [The Grand Line Restoration Initiative](./Task-02) | Completed |
+| Task-03 | [Leetcode Challenge](./Task-03) | Completed |
+| Task-04 | [The Bull & The Bear](./Task-04) | Not attempted |
+| Task-05 | [Grand Line Guardian](./Task-05) | Not attempted |
+| Task-06 | [Pirate King's Scheduler](./Task-06) | Not attempted |
+| Task-07 | [Dank Memer Discord Bot](./Task-07) | Completed |
+| Task-08 | [Operation Pixel Merge](./Task-08) | Not attempted |
+| Task-09 | [Matrix Multiplication Showdown](./Task-09) | Not attempted |
+| Task-10 | [Image Grid App](./Task-10) | Not attempted |
