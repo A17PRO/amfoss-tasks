@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Tracker</title>
   <link rel="stylesheet" href="./styles.css" />
+  <script src="darkmode.js" defer></script>
 </head>
 
-<body class="darkmode">
-    <button id="theme-switch">
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
-    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
-    </button>
+<body>
+  <button id="theme-switch">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+      <path
+        d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+      <path
+        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+    </svg>
+  </button>
   <div class="container">
     <h1>$ Crypto Price Tracking</h1>
     <p>Real-Time cryptocurrency prices and market data</p>
@@ -19,23 +27,24 @@
 
   <div class="controls">
     <div class="search-container">
-      <input
-        type="text"
-        id="search-input"
-        placeholder="Search for a cryptocurrency..."
-      />
-      <svg
-        class="search-icon"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
+      <input type="text" id="search-input" placeholder="Search for a cryptocurrency..." />
+      <svg class="search-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
         <path
-          d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.47 6.47 0 0 0 4.23-1.57l.27.28v.79L20.49 21 22 19.49l-6.5-5.49zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"
-        ></path>
+          d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.47 6.47 0 0 0 4.23-1.57l.27.28v.79L20.49 21 22 19.49l-6.5-5.49zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z">
+        </path>
       </svg>
     </div>
+
+    <button type="button" class="refresh-btn" id="refresh-button" aria-label="Refresh cryptocurrency data"
+      title="Refresh data">
+      <svg class="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="M20 11a8 8 0 1 0 2.34 5.66" />
+        <path d="M20 4v7h-7" />
+      </svg>
+      <span>Refresh</span>
+    </button>
 
     <button class="last-updated" id="lastUpdated">Last updated</button>
   </div>
@@ -49,8 +58,50 @@
     <p>Unable to fetch cryptocurrency data. Please check your connection.</p>
   </div>
 
-  <div class="crypto-grid" id="crypto-grid"></div>
+  <div class="crypto-grid" id="crypto-grid">
+    <div class="crypto-card">
+      <div class="crpto-header">
+        <div class="crypto-info">
+          <img src="${crypto.image}" alt="${crypto.name}" class="crypto-image" />
+          <div class="crypto-name">${crypto.name}</div>">
+          <div class="" crypto-symbol">${crypto.symbol}</div>
+        </div>
+      </div>
+      <div class="crypto-rank">#${crypto.market_cap_rank || 'N/A'}</div>
+    </div>
+    <div class="crypto-price">$${formatPrice(crypto.current_price)}</div>
+    <div class="market-cap">
+      Market Cap: $${formatLargeNumber(crypto.market_cap)}
+    </div>
+
+    <div class="crypto-changes"></div>
+    <div class="change-item">
+      <div class="change-label">1H</div>
+      <div class="change-value" ${getChangedClass(priceChange1h)}>
+        ${formatPercentage(PriceChange1h)}
+      </div>
+
+    <div class="change-item">
+      <div class="change-label">24H</div>
+      <div class="change-value" ${getChangedClass(priceChange24h)}>
+        ${formatPercentage(PriceChange24h)}
+      </div>
+
+    <div class="change-item">
+      <div class="change-label">7D</div>
+      <div class="change-value" ${getChangedClass(priceChange7d)}>
+        ${formatPercentage(PriceChange7d)}
+      </div>
+
+    <div class="change-item">
+      <div class="change-label">Volume 24H</div>
+      <div class="change-value neutral">
+        ${formatLargeNumber(crypto.total_column)}
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
