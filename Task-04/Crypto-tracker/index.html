@@ -36,12 +36,11 @@
       </svg>
     </div>
 
-    <button type="button" class="refresh-btn" id="refresh-button" aria-label="Refresh cryptocurrency data"
-      title="Refresh data">
-      <svg class="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+    <button type="button" class="refresh-btn" id="refresh-button" aria-label="Refresh cryptocurrency data" title="Refresh data">
+      <svg class="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-        <path d="M20 11a8 8 0 1 0 2.34 5.66" />
-        <path d="M20 4v7h-7" />
+        <path d="M21 12a9 9 0 1 1-2.64-6.36L21 8" />
+        <path d="M21 3v5h-5" />
       </svg>
       <span>Refresh</span>
     </button>
@@ -49,9 +48,10 @@
     <button class="last-updated" id="lastUpdated">Last updated</button>
   </div>
 
-  <div class="loading-grid" id="loading-grid"></div>
-  <div class="loading-spinner"></div>
-  <p class="loading-text">Loading Cryptocurrency data...</p>
+  <div class="loading-grid" id="loading-grid">
+    <div class="loading-spinner" id="loading-spinner"></div>
+    <p class="loading-text" id="loading-text">Loading Cryptocurrency data...</p>
+  </div>
 
   <div class="error" id="error">
     <h3>Failed to load Cryptocurrency data</h3>
@@ -59,46 +59,6 @@
   </div>
 
   <div class="crypto-grid" id="crypto-grid">
-    <div class="crypto-card">
-      <div class="crpto-header">
-        <div class="crypto-info">
-          <img src="${crypto.image}" alt="${crypto.name}" class="crypto-image" />
-          <div class="crypto-name">${crypto.name}</div>">
-          <div class="" crypto-symbol">${crypto.symbol}</div>
-        </div>
-      </div>
-      <div class="crypto-rank">#${crypto.market_cap_rank || 'N/A'}</div>
-    </div>
-    <div class="crypto-price">$${formatPrice(crypto.current_price)}</div>
-    <div class="market-cap">
-      Market Cap: $${formatLargeNumber(crypto.market_cap)}
-    </div>
-
-    <div class="crypto-changes"></div>
-    <div class="change-item">
-      <div class="change-label">1H</div>
-      <div class="change-value" ${getChangedClass(priceChange1h)}>
-        ${formatPercentage(PriceChange1h)}
-      </div>
-
-    <div class="change-item">
-      <div class="change-label">24H</div>
-      <div class="change-value" ${getChangedClass(priceChange24h)}>
-        ${formatPercentage(PriceChange24h)}
-      </div>
-
-    <div class="change-item">
-      <div class="change-label">7D</div>
-      <div class="change-value" ${getChangedClass(priceChange7d)}>
-        ${formatPercentage(PriceChange7d)}
-      </div>
-
-    <div class="change-item">
-      <div class="change-label">Volume 24H</div>
-      <div class="change-value neutral">
-        ${formatLargeNumber(crypto.total_column)}
-      </div>
-    </div>
   </div>
 
   <script src="script.js"></script>
