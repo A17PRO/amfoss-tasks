@@ -32,7 +32,7 @@ I like coding but I'm not very versed in frontend coding, I mostly work on the b
 
 ## What are your thoughts and feedback on the Praveshan Selection Process?
 
-Praveshan 2026 is a selection process. Honestly way better than I thought club selections would be.
+Praveshan 2026 is a great selection process. Honestly way better than I thought club selections would be.
 
 ---
 
