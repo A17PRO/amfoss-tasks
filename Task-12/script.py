@@ -36,36 +36,38 @@ def draw_notes(draw, text, font, color):
 
 #EXECUTION - MAIN CODE
 def main():
-    #init
-    canvas = Image.new("RGB", (1920, 1080), ImageColor.getrgb("#000000"))
-    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 40)
-    time_str = datetime.now().strftime("%H:%M:%S")
+    try:
+        #init
+        canvas = Image.new("RGB", (1920, 1080), ImageColor.getrgb("#000000"))
+        font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 40)
+        time_str = datetime.now().strftime("%H:%M:%S")
 
-    #draw time
-    draw = ImageDraw.Draw(canvas)
-    draw_time(draw, time_str, font, (255,255,255))
+        #draw time
+        draw = ImageDraw.Draw(canvas)
+        draw_time(draw, time_str, font, (255,255,255))
 
-    #draw notes
-    notes = read_file("to-do-list.txt")
-    draw_notes(draw, notes, font, (255, 255, 255))
+        #draw notes
+        notes = read_file("to-do-list.txt")
+        draw_notes(draw, notes, font, (255, 255, 255))
 
-    #save wallpaper
-    unique_id = time_str
-    wallpaper_path = f"wallpaper_{unique_id}.jpg"
-    canvas.save(wallpaper_path)
-    print(f"Saved successfully to {wallpaper_path}")
+        #save wallpaper
+        unique_id = time_str
+        wallpaper_path = f"wallpaper_{unique_id}.jpg"
+        canvas.save(wallpaper_path)
+        print(f"Saved successfully to {wallpaper_path}")
 
-    #apply wallpaper
-    canvas.save(wallpaper_path)
-    abs_path = os.path.abspath(wallpaper_path)
-    subprocess.run(["plasma-apply-wallpaperimage", abs_path], check=True)
-    print("Wallpaper Applied")
+        #apply wallpaper
+        canvas.save(wallpaper_path)
+        abs_path = os.path.abspath(wallpaper_path)
+        subprocess.run(["plasma-apply-wallpaperimage", abs_path], check=True)
+        print("Wallpaper Applied")
 
-    #delete images
-    for old_file in glob.glob("wallpaper_*.jpg"):
-        if old_file != wallpaper_path:
-            os.remove(old_file)
-            print("Cleaned up files")
+        #delete images
+        for old_file in glob.glob("wallpaper_*.jpg"):
+            if old_file != wallpaper_path:
+                os.remove(old_file)
+                print("Cleaned up files")
+        time.sleep(1)
 
-if __name__ == "__main__":
-    main()
+    except KeyboardInterrupt:
+        print("\nEngine stopped")
