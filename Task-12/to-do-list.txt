@@ -1,3 +1,5 @@
 Task 1: Finish the dynamic wallpaper script for my assignment.
 Task 2: Figure out how to connect the Google GenAI API without blowing up my laptop.
 Task 3: Play some Valorant.
+Task 4: Go sleep
+Task 5: Wake up at 7
