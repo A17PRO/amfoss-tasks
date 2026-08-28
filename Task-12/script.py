@@ -10,10 +10,9 @@ from google import genai
 from dotenv import load_dotenv
 from datetime import datetime
 
-#FUNCTIONS
+#Functions
 def draw_time(draw, time_str, font, color):
     draw.text((1600, 100), time_str, font=font, fill=color)
-
 
 def read_file(file_path):
     if os.path.exists(file_path):
@@ -77,7 +76,7 @@ def format(raw_text):
     finally:
         is_ai_loading = False
 
-#INIT AI
+#Init AI
 load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 api_key = (
     os.getenv("GEMINI_API_KEY")
@@ -89,11 +88,11 @@ if not api_key:
     )
 ai_client = genai.Client(api_key=api_key)
 
-#GLOBAL CACHE
+#Cache
 cached_ai_notes = "Loading tasks..."
 is_ai_loading = False
 
-#EXECUTION - MAIN CODE
+#Main Code
 def main():
     global cached_ai_notes, is_ai_loading
     file_path = "/home/aditya/amfoss-tasks/Task-12/to-do-list.txt"
